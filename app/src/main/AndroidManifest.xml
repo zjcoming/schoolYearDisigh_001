@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.test_demo">
+package="com.example.test_demo">
 
-    <application
-        android:allowBackup="true"
+<application
+    android:allowBackup="true"
     android:icon="@drawable/bilibiliicon1"
     android:label="@string/app_name"
     android:roundIcon="@drawable/bilibiliicon1"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
-<activity android:name=".MainActivityZj">
-    <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
+    <activity android:name=".MainActivityZj">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER" />
-    </intent-filter>
-</activity>
-<activity android:name=".BilibiliActivity" />
-    </application>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name=".BilibiliActivity" />
+</application>
 
-    </manifest>
+</manifest>
