@@ -10,10 +10,13 @@
         android:id="@+id/imageView"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/xuweixiaodianshitouxiang" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -52,17 +55,15 @@
         app:layout_constraintGuide_percent="0.9" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/searchContentText"
+        android:layout_width="264dp"
+        android:layout_height="38dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.258"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="1.0" />
@@ -73,12 +74,12 @@
         android:layout_height="30dp"
 
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/searchContentText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextMultiLine"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextMultiLine"
-        app:layout_constraintVertical_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toEndOf="@+id/searchContentText"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.333"
         app:srcCompat="@drawable/m1" />
 
     <TextView
@@ -90,7 +91,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView9"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView4"
@@ -113,7 +114,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView7"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView7"
@@ -124,7 +125,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView8"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView9"
@@ -135,7 +136,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView10"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/textView10"
@@ -146,7 +147,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -282,5 +283,14 @@
         app:layout_constraintTop_toTopOf="@+id/imageView15"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/bilibili2" />
+
+    <ImageView
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/searchContentText"
+        app:srcCompat="@drawable/search1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

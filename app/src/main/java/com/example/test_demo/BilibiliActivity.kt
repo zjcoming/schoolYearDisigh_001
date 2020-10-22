@@ -58,7 +58,15 @@ class BilibiliActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
-
+        searchBtn.setOnClickListener{
+            var searchContent = searchContentText.text.toString()
+            Intent().apply {
+                action = Intent.ACTION_VIEW
+                data = Uri.parse("https://m.bilibili.com/search?keyword=${searchContent}")
+            }.also {
+                startActivity(it)
+            }
+        }
 
     }
 }
